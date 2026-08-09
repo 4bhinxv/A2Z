@@ -1,0 +1,214 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
+  --font-mono: var(--font-sans);
+  --font-heading: var(--font-display);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+
+  /* Brand: AutoGloss gold scale, sampled from the logo + ozone-treatment flyer */
+  --color-gold-100: var(--gold-100);
+  --color-gold-200: var(--gold-200);
+  --color-gold-300: var(--gold-300);
+  --color-gold-400: var(--gold-400);
+  --color-gold-500: var(--gold-500);
+  --color-gold-600: var(--gold-600);
+  --color-gold-700: var(--gold-700);
+  --color-ember-400: var(--ember-400);
+  --color-ember-500: var(--ember-500);
+  --color-surface-1: var(--surface-1);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-surface-4: var(--surface-4);
+  --color-silver-300: var(--silver-300);
+  --color-silver-400: var(--silver-400);
+  --color-silver-500: var(--silver-500);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  color-scheme: dark;
+
+  /* Neutrals: cool, almost-blue-black "ink" — never warm/brownish, never pure #000 */
+  --background: oklch(0.1 0.005 260);
+  --foreground: oklch(0.95 0.016 85);
+  --card: oklch(0.16 0.006 260);
+  --card-foreground: oklch(0.95 0.016 85);
+  --popover: oklch(0.185 0.007 260);
+  --popover-foreground: oklch(0.95 0.016 85);
+
+  /* Gold scale — muted, desaturated champagne rather than a bright/neon gold */
+  --gold-100: oklch(0.92 0.045 82);
+  --gold-200: oklch(0.865 0.065 78);
+  --gold-300: oklch(0.8 0.078 74);
+  --gold-400: oklch(0.73 0.088 70);
+  --gold-500: oklch(0.655 0.088 66);
+  --gold-600: oklch(0.545 0.082 60);
+  --gold-700: oklch(0.43 0.068 52);
+
+  /* Ember — secondary warm accent lifted from the ozone-treatment flyer, used sparingly */
+  --ember-400: oklch(0.68 0.13 42);
+  --ember-500: oklch(0.6 0.15 36);
+
+  /* Silver — cool metallic neutral, a second accent family so the palette isn't gold-only */
+  --silver-300: oklch(0.86 0.004 260);
+  --silver-400: oklch(0.72 0.006 260);
+  --silver-500: oklch(0.58 0.008 260);
+
+  /* Layered ink surfaces — subtle, almost-imperceptible steps so sections
+     read as one coherent dark composition instead of a single flat black slab. */
+  --surface-1: oklch(0.125 0.005 260);
+  --surface-2: oklch(0.15 0.006 260);
+  --surface-3: oklch(0.18 0.007 260);
+  --surface-4: oklch(0.21 0.008 260);
+
+  --primary: var(--gold-400);
+  --primary-foreground: oklch(0.14 0.015 60);
+  --secondary: var(--surface-3);
+  --secondary-foreground: var(--foreground);
+  --muted: var(--surface-2);
+  --muted-foreground: oklch(0.62 0.008 260);
+  --accent: var(--ember-400);
+  --accent-foreground: oklch(0.16 0.02 40);
+  --destructive: oklch(0.6 0.21 25);
+  --border: oklch(0.95 0.016 85 / 10%);
+  --input: oklch(0.95 0.016 85 / 12%);
+  --ring: var(--gold-400);
+  --chart-1: var(--gold-300);
+  --chart-2: var(--gold-500);
+  --chart-3: var(--ember-400);
+  --chart-4: oklch(0.6 0.02 70);
+  --chart-5: oklch(0.4 0.02 70);
+  --radius: 0.75rem;
+  --sidebar: var(--surface-1);
+  --sidebar-foreground: var(--foreground);
+  --sidebar-primary: var(--gold-400);
+  --sidebar-primary-foreground: oklch(0.14 0.015 60);
+  --sidebar-accent: var(--surface-3);
+  --sidebar-accent-foreground: var(--foreground);
+  --sidebar-border: oklch(0.95 0.016 85 / 10%);
+  --sidebar-ring: var(--gold-400);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+    scroll-behavior: smooth;
+  }
+  /* Keep anchor targets clear of the floating header */
+  section[id] {
+    scroll-margin-top: 6.5rem;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  ::selection {
+    background: oklch(0.655 0.088 66 / 32%);
+    color: var(--foreground);
+  }
+  a:focus-visible,
+  button:focus-visible,
+  [role="slider"]:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid var(--gold-400);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    background-image: linear-gradient(
+      100deg,
+      var(--gold-200) 0%,
+      var(--gold-400) 45%,
+      var(--gold-600) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .glow-gold {
+    box-shadow: 0 0 80px -20px oklch(0.655 0.088 66 / 45%);
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+  .btn-shine {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+  }
+  .btn-shine::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      115deg,
+      transparent 35%,
+      oklch(1 0 0 / 35%) 50%,
+      transparent 65%
+    );
+    transform: translateX(-130%);
+    transition: transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .btn-shine:hover::after {
+    transform: translateX(130%);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .btn-shine::after {
+      display: none;
+    }
+  }
+}
