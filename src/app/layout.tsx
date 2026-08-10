@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque, Inter } from "next/font/google";
+import { Bricolage_Grotesque, Inter, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -14,6 +14,13 @@ const bricolage = Bricolage_Grotesque({
 const inter = Inter({
   variable: "--font-sans",
   subsets: ["latin", "latin-ext"],
+});
+
+const instrumentSerif = Instrument_Serif({
+  variable: "--font-accent",
+  subsets: ["latin"],
+  weight: ["400"],
+  style: ["italic"],
 });
 
 const title =
@@ -95,7 +102,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="sr"
-      className={`dark ${bricolage.variable} ${inter.variable} h-full overflow-x-hidden antialiased`}
+      className={`dark ${bricolage.variable} ${inter.variable} ${instrumentSerif.variable} h-full overflow-x-hidden antialiased`}
     >
       <body className="min-h-full flex flex-col overflow-x-hidden bg-background text-foreground">
         <script

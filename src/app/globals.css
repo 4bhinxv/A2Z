@@ -9,6 +9,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);
   --font-display: var(--font-display);
+  --font-accent: var(--font-accent);
   --font-mono: var(--font-sans);
   --font-heading: var(--font-display);
   --color-sidebar-ring: var(--sidebar-ring);
