@@ -12,28 +12,34 @@ export default function FinalCTA() {
       className="relative overflow-hidden bg-surface-2 py-24 sm:py-32"
     >
       <div className="mx-auto max-w-5xl px-6 lg:px-8">
-        <ScaleReveal className="relative overflow-hidden rounded-[2.5rem] border border-gold-500/20 px-6 py-16 text-center sm:px-16 sm:py-20">
+        <ScaleReveal className="relative overflow-hidden rounded-[2.5rem] border border-gold-500/30 px-6 py-16 text-center shadow-[0_0_80px_-20px_oklch(0.655_0.088_66_/_35%)] sm:px-16 sm:py-20">
           <div className="pointer-events-none absolute inset-0 -z-10">
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  "radial-gradient(130% 100% at 50% 110%, oklch(0.32 0.07 55) 0%, oklch(0.16 0.03 50) 45%, oklch(0.08 0.012 50) 100%)",
+              }}
+            />
             <Image
               src={ctaImage.src}
               alt=""
               fill
               aria-hidden
-              className="object-cover opacity-[0.06]"
+              className="object-cover opacity-[0.05] mix-blend-overlay"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-surface-3 via-surface-2 to-surface-1" />
             <div
-              className="absolute bottom-0 left-1/2 h-[420px] w-[620px] -translate-x-1/2 translate-y-1/3 opacity-40 blur-[100px]"
+              className="absolute bottom-0 left-1/2 h-[380px] w-[560px] -translate-x-1/2 translate-y-1/4 opacity-70 blur-[90px]"
               style={{
                 background:
-                  "radial-gradient(ellipse, var(--gold-600) 0%, var(--ember-500) 55%, transparent 75%)",
+                  "radial-gradient(ellipse, var(--gold-500) 0%, var(--ember-500) 55%, transparent 75%)",
               }}
             />
           </div>
 
           <h2 className="text-balance font-display text-4xl font-semibold tracking-tight text-foreground sm:text-6xl">
             Vreme je za{" "}
-            <span className="font-accent text-[1.15em] font-normal text-gold-300 italic">
+            <span className="font-accent text-[1.15em] font-semibold text-gold-300 italic">
               AutoGloss
             </span>{" "}
             iskustvo.

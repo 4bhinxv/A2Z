@@ -11,7 +11,7 @@ export default function BeforeAfter() {
           <SectionEyebrow>Pre i posle</SectionEyebrow>
           <h2 className="mt-4 text-balance font-display text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
             Razlika koju odmah{" "}
-            <span className="font-accent text-[1.1em] font-normal text-gold-300 italic">
+            <span className="font-accent text-[1.1em] font-semibold text-gold-300 italic">
               vidite
             </span>
           </h2>

@@ -187,6 +187,11 @@ export const ctaImage: ImageAsset = {
 
 export const faqItems = [
   {
+    question: "Da li dolazite na moju adresu?",
+    answer:
+      "Da. Mobilni smo servis za Smederevo i okolinu — dolazimo kod vas sa kompletnom profesionalnom opremom, tako da ne morate nigde da vozite ni da čekate u redu.",
+  },
+  {
     question: "Da li je ozon tretman bezbedan?",
     answer:
       "Da. Ozon tretman je 100% prirodan, bez hemikalija i veštačkih mirisa. Sprovodi se u praznom, nezauzetom vozilu — kada se tretman završi i vozilo se provetri, enterijer je potpuno bezbedan za upotrebu.",

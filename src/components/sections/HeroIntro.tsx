@@ -39,7 +39,7 @@ export default function HeroIntro() {
         className="text-balance font-display text-[2.75rem] leading-[1.05] font-semibold tracking-tight text-foreground sm:text-6xl lg:text-[4.2rem]"
       >
         Vaše vozilo i nameštaj, iznova{" "}
-        <span className="font-accent text-[1.05em] font-normal text-gold-300 italic">
+        <span className="font-accent text-[1.05em] font-semibold text-gold-300 italic">
           besprekorni.
         </span>
       </motion.h1>

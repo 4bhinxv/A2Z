@@ -15,7 +15,7 @@ export default function Services() {
           <SectionEyebrow>Usluge</SectionEyebrow>
           <h2 className="mt-4 text-balance font-display text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
             Obrada koja ide dublje od{" "}
-            <span className="font-accent text-[1.1em] font-normal text-gold-300 italic">
+            <span className="font-accent text-[1.1em] font-semibold text-gold-300 italic">
               površine
             </span>
           </h2>
