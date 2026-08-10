@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Check, SprayCan } from "lucide-react";
 import { services } from "@/lib/site";
 import { FadeUp, StaggerGroup, StaggerChild } from "@/components/motion/reveal";
+import { SectionEyebrow } from "@/components/ui/section-eyebrow";
 
 export default function Services() {
   const photoServices = services.filter((s) => s.image);
@@ -11,11 +12,12 @@ export default function Services() {
     <section id="usluge" className="relative bg-surface-2 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <FadeUp className="max-w-2xl">
-          <span className="text-xs font-semibold tracking-[0.2em] text-gold-400 uppercase">
-            Usluge
-          </span>
+          <SectionEyebrow>Usluge</SectionEyebrow>
           <h2 className="mt-4 text-balance font-display text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
-            Obrada koja ide dublje od površine
+            Obrada koja ide dublje od{" "}
+            <span className="font-accent text-[1.1em] font-normal text-gold-300 italic">
+              površine
+            </span>
           </h2>
           <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
             Od enterijera vozila do omiljene fotelje — svaka usluga je

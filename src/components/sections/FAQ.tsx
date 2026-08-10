@@ -1,5 +1,6 @@
 import { faqItems } from "@/lib/site";
 import { FadeUp, StaggerGroup, StaggerChild } from "@/components/motion/reveal";
+import { SectionEyebrow } from "@/components/ui/section-eyebrow";
 import {
   Accordion,
   AccordionItem,
@@ -12,11 +13,12 @@ export default function FAQ() {
     <section id="faq" className="relative bg-surface-1 py-24 sm:py-32">
       <div className="mx-auto max-w-3xl px-6 lg:px-8">
         <FadeUp className="text-center">
-          <span className="text-xs font-semibold tracking-[0.2em] text-gold-400 uppercase">
-            Pitanja
-          </span>
+          <SectionEyebrow>Pitanja</SectionEyebrow>
           <h2 className="mt-4 text-balance font-display text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
-            Često postavljana pitanja
+            Često postavljana{" "}
+            <span className="font-accent text-[1.1em] font-normal text-gold-300 italic">
+              pitanja
+            </span>
           </h2>
         </FadeUp>
 

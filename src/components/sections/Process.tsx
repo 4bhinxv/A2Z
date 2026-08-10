@@ -1,17 +1,19 @@
 import { ChevronRight } from "lucide-react";
 import { processSteps } from "@/lib/site";
 import { FadeUp, StaggerGroup, StaggerChild } from "@/components/motion/reveal";
+import { SectionEyebrow } from "@/components/ui/section-eyebrow";
 
 export default function Process() {
   return (
     <section id="kako-radimo" className="relative bg-background py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <FadeUp className="max-w-2xl">
-          <span className="text-xs font-semibold tracking-[0.2em] text-gold-400 uppercase">
-            Kako radimo
-          </span>
+          <SectionEyebrow>Kako radimo</SectionEyebrow>
           <h2 className="mt-4 text-balance font-display text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
-            Od poruke do besprekornog rezultata
+            Od poruke do besprekornog{" "}
+            <span className="font-accent text-[1.1em] font-normal text-gold-300 italic">
+              rezultata
+            </span>
           </h2>
         </FadeUp>
 

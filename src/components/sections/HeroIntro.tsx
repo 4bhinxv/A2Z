@@ -38,8 +38,10 @@ export default function HeroIntro() {
         variants={item}
         className="text-balance font-display text-[2.75rem] leading-[1.05] font-semibold tracking-tight text-foreground sm:text-6xl lg:text-[4.2rem]"
       >
-        Vaše vozilo i nameštaj,{" "}
-        <span className="text-gradient-gold">iznova besprekorni.</span>
+        Vaše vozilo i nameštaj, iznova{" "}
+        <span className="font-accent text-[1.05em] font-normal text-gold-300 italic">
+          besprekorni.
+        </span>
       </motion.h1>
 
       <motion.p

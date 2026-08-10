@@ -165,7 +165,8 @@ export const aboutImage: ImageAsset = {
  */
 export const ozoneContent = {
   eyebrow: "Ozon tretman vozila",
-  title: "Svež vazduh. Bez neprijatnih mirisa.",
+  titleLead: "Svež vazduh. Bez neprijatnih",
+  titleAccent: "mirisa.",
   description:
     "Profesionalan, efikasan i 100% prirodan tretman bez hemikalija koji ne prekriva neprijatne mirise — već ih trajno uklanja iz vozila.",
   removes: [

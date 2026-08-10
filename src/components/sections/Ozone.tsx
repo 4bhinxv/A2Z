@@ -24,7 +24,10 @@ export default function Ozone() {
               {ozoneContent.eyebrow}
             </div>
             <h2 className="mt-5 text-balance font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-              {ozoneContent.title}
+              {ozoneContent.titleLead}{" "}
+              <span className="font-accent text-[1.1em] font-normal text-gold-300 italic">
+                {ozoneContent.titleAccent}
+              </span>
             </h2>
             <p className="mt-5 max-w-lg text-base leading-relaxed text-muted-foreground">
               {ozoneContent.description}

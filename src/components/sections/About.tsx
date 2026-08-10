@@ -3,6 +3,7 @@ import { MapPin, Wrench, Leaf, Sparkles } from "lucide-react";
 import { aboutImage, advantages } from "@/lib/site";
 import { FadeUp, ImageReveal, StaggerGroup, StaggerChild } from "@/components/motion/reveal";
 import { ParallaxImage } from "@/components/motion/parallax-image";
+import { SectionEyebrow } from "@/components/ui/section-eyebrow";
 
 const icons = [MapPin, Wrench, Leaf, Sparkles];
 
@@ -29,11 +30,12 @@ export default function About() {
           </ImageReveal>
 
           <FadeUp>
-            <span className="text-xs font-semibold tracking-[0.2em] text-gold-400 uppercase">
-              O nama
-            </span>
+            <SectionEyebrow>O nama</SectionEyebrow>
             <h2 className="mt-4 text-balance font-display text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
-              Detalji koje drugi preskoče, mi ne preskačemo
+              Detalji koje drugi preskoče, mi ih{" "}
+              <span className="font-accent text-[1.1em] font-normal text-gold-300 italic">
+                ne preskačemo
+              </span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               AutoGloss je nastao iz jednostavne ideje — vozilo i nameštaj

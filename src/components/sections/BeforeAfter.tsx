@@ -1,17 +1,19 @@
 import Image from "next/image";
 import { beforeAfterItems } from "@/lib/site";
 import { FadeUp, SlideIn } from "@/components/motion/reveal";
+import { SectionEyebrow } from "@/components/ui/section-eyebrow";
 
 export default function BeforeAfter() {
   return (
     <section id="pre-posle" className="relative bg-surface-1 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <FadeUp className="mx-auto max-w-2xl text-center">
-          <span className="text-xs font-semibold tracking-[0.2em] text-gold-400 uppercase">
-            Pre i posle
-          </span>
+          <SectionEyebrow>Pre i posle</SectionEyebrow>
           <h2 className="mt-4 text-balance font-display text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
-            Razlika koju odmah vidite
+            Razlika koju odmah{" "}
+            <span className="font-accent text-[1.1em] font-normal text-gold-300 italic">
+              vidite
+            </span>
           </h2>
           <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
             Ovo su stvarne fotografije sa naših intervencija — bez filtera i
