@@ -1,13 +1,13 @@
 export const siteConfig = {
   name: "AutoGloss",
-  tagline: "Dubinsko pranje vozila i nameštaja",
+  tagline: "Deep cleaning of vehicles and furniture",
   description:
-    "AutoGloss je servis za profesionalno dubinsko pranje enterijera vozila, tapaciranog nameštaja i ozon tretman u Smederevu i okolini. Dolazimo na vašu adresu.",
+    "AutoGloss is a professional deep-cleaning service for vehicle interiors, upholstered furniture, and ozone treatment in Smederevo and the surrounding area. We come to your address.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://autogloss.rs",
   locale: "sr_RS",
   location: {
     city: "Smederevo",
-    region: "Smederevo i okolina",
+    region: "Smederevo and surrounding area",
     country: "RS",
   },
   instagram: {
@@ -17,12 +17,12 @@ export const siteConfig = {
 } as const;
 
 export const navLinks = [
-  { label: "O nama", href: "#o-nama" },
-  { label: "Usluge", href: "#usluge" },
-  { label: "Pre i posle", href: "#pre-posle" },
-  { label: "Kako radimo", href: "#kako-radimo" },
-  { label: "Ozon tretman", href: "#ozon-tretman" },
-  { label: "Kontakt", href: "#kontakt" },
+  { label: "About Us", href: "#o-nama" },
+  { label: "Services", href: "#usluge" },
+  { label: "Before & After", href: "#pre-posle" },
+  { label: "How We Work", href: "#kako-radimo" },
+  { label: "Ozone Treatment", href: "#ozon-tretman" },
+  { label: "Contact", href: "#kontakt" },
 ] as const;
 
 export type ImageAsset = {
@@ -42,37 +42,37 @@ export type Service = {
 export const services: Service[] = [
   {
     id: "enterijer-vozila",
-    title: "Dubinsko pranje enterijera vozila",
+    title: "Deep Cleaning of Vehicle Interiors",
     description:
-      "Kompletna obrada sedišta, tepiha, plastike i tavanice — profesionalnom opremom koja izvlači prljavštinu iz najdubljih vlakana, ne samo sa površine.",
+      "Complete treatment of seats, carpets, plastic surfaces, and headliner — using professional equipment that extracts dirt from the deepest fibers, not just from the surface.",
     points: [
-      "Ekstrakciono pranje sedišta i tepiha",
-      "Pranje plastike, tavanice i vrata",
-      "Uklanjanje mrlja i starih fleka",
+      "Extraction cleaning of seats and carpets",
+      "Cleaning of plastic surfaces, headliner, and doors",
+      "Removal of stains and old marks",
     ],
     image: { src: "/images/gallery/mercedes-amg-interior.jpg", ratio: 0.66 },
   },
   {
     id: "namestaj",
-    title: "Pranje tapaciranog nameštaja",
+    title: "Upholstered Furniture Cleaning",
     description:
-      "Trosedi, fotelje, madraci i stolice dobijaju istu pažnju kao i vozila. Idealno za flekice od kafe, hrane, kućnih ljubimaca ili godine upotrebe.",
+      "Sofas, armchairs, mattresses, and chairs receive the same level of care as vehicles. Ideal for coffee stains, food stains, pet stains, or years of everyday use.",
     points: [
-      "Trosedi, fotelje i stolice",
-      "Madraci i dečiji kreveci",
-      "Bezbedno za sve vrste tkanina",
+      "Sofas, armchairs, and chairs",
+      "Mattresses and children's beds",
+      "Safe for all types of fabrics",
     ],
     image: { src: "/images/gallery/sofa-detail.jpg", ratio: 0.66 },
   },
   {
     id: "patosnice",
-    title: "Pranje auto patosnica i tepiha",
+    title: "Car Floor Mat and Carpet Cleaning",
     description:
-      "Godine blata, peska i mrlja — skinuto do poslednjeg vlakna. Patosnice se vraćaju u vozilo potpuno suve i sveže. Rezultat pogledajte u sekciji Pre i posle.",
+      "Years of mud, sand, and stains — removed down to the last fiber. Floor mats are returned to your vehicle completely dry and fresh. See the results in the Before & After section.",
     points: [
-      "Dubinsko ekstrakciono pranje",
-      "Uklanjanje mrlja i neprijatnih mirisa",
-      "Brzo sušenje, bez zadržavanja vlage",
+      "Deep extraction cleaning",
+      "Removal of stains and unpleasant odors",
+      "Fast drying, with no retained moisture",
     ],
   },
 ];
@@ -90,17 +90,18 @@ export type BeforeAfterItem = {
 export const beforeAfterItems: BeforeAfterItem[] = [
   {
     id: "madrac",
-    title: "Dečiji madrac",
+    title: "Children's Mattress",
     description:
-      "Fleke starije od mesec dana, za koje se mislilo da se ne mogu skinuti.",
+      "Stains that were more than a month old and were thought to be impossible to remove.",
     ratio: 1.55,
     before: "/images/before-after/mattress-before.jpg",
     after: "/images/before-after/mattress-after.jpg",
   },
   {
     id: "patosnica",
-    title: "Auto patosnica",
-    description: "Godine blata i peska uklonjene do poslednjeg vlakna tepiha.",
+    title: "Car Floor Mat",
+    description:
+      "Years of mud and sand removed down to the last carpet fiber.",
     ratio: 0.675,
     before: "/images/before-after/mat-before.jpg",
     after: "/images/before-after/mat-after.jpg",
@@ -109,47 +110,51 @@ export const beforeAfterItems: BeforeAfterItem[] = [
 
 export const advantages = [
   {
-    title: "Dolazimo na vašu adresu",
+    title: "We Come to Your Address",
     description:
-      "Servis za Smederevo i okolinu — nema gubljenja vremena, obradu radimo tamo gde vam odgovara.",
+      "Service available in Smederevo and the surrounding area — no wasted time, we work wherever it is convenient for you.",
   },
   {
-    title: "Profesionalna oprema",
+    title: "Professional Equipment",
     description:
-      "Ekstrakciona mašina i industrijski ozon generator — ne obična kućna usisivačica i osveživač.",
+      "Extraction machine and industrial ozone generator — not an ordinary household vacuum cleaner and air freshener.",
   },
   {
-    title: "Bez agresivnih hemikalija",
+    title: "No Aggressive Chemicals",
     description:
-      "Ozon tretman je 100% prirodan. Sredstva za pranje su bezbedna za decu, kućne ljubimce i osetljive tkanine.",
+      "Ozone treatment is 100% natural. Our cleaning products are safe for children, pets, and delicate fabrics.",
   },
   {
-    title: "Pažnja posvećena detaljima",
+    title: "Attention to Detail",
     description:
-      "Svaki šav, svaki ugao, svaka fleka — obrađujemo temeljno, ne površno.",
+      "Every seam, every corner, every stain — we treat everything thoroughly, not just superficially.",
   },
 ] as const;
 
 export const processSteps = [
   {
     step: "01",
-    title: "Zakazivanje",
-    description: "Pišete nam poruku na Instagram i dogovaramo termin koji vam odgovara.",
+    title: "Booking",
+    description:
+      "Send us a message on Instagram and we will arrange a time that works for you.",
   },
   {
     step: "02",
-    title: "Dolazak na adresu",
-    description: "Dolazimo kod vas sa kompletnom profesionalnom opremom, spremni za rad.",
+    title: "We Come to Your Address",
+    description:
+      "We arrive at your location with all the professional equipment needed and ready to work.",
   },
   {
     step: "03",
-    title: "Dubinska obrada",
-    description: "Ekstrakciono pranje, uklanjanje fleka i, po potrebi, ozon tretman.",
+    title: "Deep Cleaning",
+    description:
+      "Extraction cleaning, stain removal, and, when needed, ozone treatment.",
   },
   {
     step: "04",
-    title: "Rezultat koji se vidi i oseti",
-    description: "Sveže, čisto i bez neprijatnih mirisa — odmah spremno za upotrebu.",
+    title: "A Result You Can See and Feel",
+    description:
+      "Fresh, clean, and free of unpleasant odors — ready to use immediately.",
   },
 ] as const;
 
@@ -159,23 +164,23 @@ export const aboutImage: ImageAsset = {
 };
 
 /**
- * Copy adapted from the AutoGloss "Ozon tretman vozila" promotional graphic —
+ * Copy adapted from the AutoGloss "Ozone Vehicle Treatment" promotional graphic —
  * headline, removal list and closing line are carried over from the original,
  * condensed for the web.
  */
 export const ozoneContent = {
-  eyebrow: "Ozon tretman vozila",
-  titleLead: "Svež vazduh. Bez neprijatnih",
-  titleAccent: "mirisa.",
+  eyebrow: "Ozone Vehicle Treatment",
+  titleLead: "Fresh air. Without unpleasant",
+  titleAccent: "odors.",
   description:
-    "Profesionalan, efikasan i 100% prirodan tretman bez hemikalija koji ne prekriva neprijatne mirise — već ih trajno uklanja iz vozila.",
+    "A professional, effective, and 100% natural treatment without chemicals that does not mask unpleasant odors — but removes them from the vehicle.",
   removes: [
-    "Miris cigareta i duvana",
-    "Ustajale mirise u vozilu",
-    "Miris kućnih ljubimaca",
-    "Miris hrane i pića",
-    "Miris vlage i buđi",
-    "Mirise iz ventilacije i klime",
+    "Cigarette and tobacco odors",
+    "Stale odors inside the vehicle",
+    "Pet odors",
+    "Food and drink odors",
+    "Moisture and mold odors",
+    "Odors from ventilation and air conditioning",
   ],
   image: { src: "/images/services/ozone-treatment.jpg", ratio: 1.118 },
 } as const;
@@ -187,33 +192,34 @@ export const ctaImage: ImageAsset = {
 
 export const faqItems = [
   {
-    question: "Da li dolazite na moju adresu?",
+    question: "Do you come to my address?",
     answer:
-      "Da. Mobilni smo servis za Smederevo i okolinu — dolazimo kod vas sa kompletnom profesionalnom opremom, tako da ne morate nigde da vozite ni da čekate u redu.",
+      "Yes. We are a mobile service for Smederevo and the surrounding area — we come to you with all the professional equipment, so you don't have to drive anywhere or wait in line.",
   },
   {
-    question: "Da li je ozon tretman bezbedan?",
+    question: "Is ozone treatment safe?",
     answer:
-      "Da. Ozon tretman je 100% prirodan, bez hemikalija i veštačkih mirisa. Sprovodi se u praznom, nezauzetom vozilu — kada se tretman završi i vozilo se provetri, enterijer je potpuno bezbedan za upotrebu.",
+      "Yes. Ozone treatment is 100% natural, without chemicals or artificial fragrances. It is carried out in an empty, unoccupied vehicle — once the treatment is complete and the vehicle has been ventilated, the interior is completely safe to use.",
   },
   {
-    question: "Da li mrlje zaista mogu potpuno da se uklone?",
+    question: "Can stains really be completely removed?",
     answer:
-      "Ekstrakciona oprema koju koristimo izvlači prljavštinu iz dubine tkanine, ne samo sa površine, pa uspešno rešavamo i starije, uporne mrlje. Svaki slučaj je drugačiji, pa pre početka procenimo stanje i realno vam kažemo šta možemo da postignemo.",
+      "The extraction equipment we use pulls dirt from deep within the fabric, not just from the surface, allowing us to successfully deal with older, stubborn stains as well. Every case is different, so before we begin, we assess the condition and honestly tell you what results we can realistically achieve.",
   },
   {
-    question: "Da li ostaje vlaga u tapaciranom nameštaju ili vozilu nakon pranja?",
+    question:
+      "Will moisture remain in the upholstered furniture or vehicle after cleaning?",
     answer:
-      "Ne. Profesionalna ekstrakciona tehnika izvlači gotovo svu vlagu tokom samog pranja, tako da su površine bezbedne za upotrebu mnogo brže nego pri klasičnom ručnom pranju.",
+      "No. Professional extraction technology removes almost all moisture during the cleaning process itself, so surfaces are safe to use much sooner than with traditional manual washing.",
   },
   {
-    question: "Kako mogu da zakažem termin?",
+    question: "How can I book an appointment?",
     answer:
-      "Najlakše je da nam pošaljete poruku na Instagram — dogovaramo datum, vreme i sve detalje direktno u razgovoru.",
+      "The easiest way is to send us a message on Instagram — we will arrange the date, time, and all the details directly through the conversation.",
   },
   {
-    question: "Da li radite sa svim vrstama vozila i nameštaja?",
+    question: "Do you work with all types of vehicles and furniture?",
     answer:
-      "Da — od gradskih automobila do premium modela, kao i trosedi, fotelje, madraci i drugi tapacirani komadi. Sredstva koja koristimo su bezbedna za sve vrste tkanina.",
+      "Yes — from city cars to premium models, as well as sofas, armchairs, mattresses, and other upholstered items. The products we use are safe for all types of fabrics.",
   },
 ] as const;
